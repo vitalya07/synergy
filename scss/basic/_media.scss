@@ -20,6 +20,16 @@
             line-height: 16px;
         }
     }     
+    .news {
+        &__arrow {
+            &-prev {
+                left: 2%;
+            }
+            &-next {
+                right: 2%;
+            }
+        }
+    }
 }
 @media(max-width: 1440px) {
     .container {
@@ -68,6 +78,21 @@
             position: absolute;
             top: 162px;
             left: 960px;
+        }
+    }
+    .news {
+        &__item {
+            &:nth-child(4) {
+                display: none;
+            }
+        }
+        &__arrow {
+            &-prev {
+                left: 2%;
+            }
+            &-next {
+                right: 2%;
+            }
         }
     }
 }
@@ -196,6 +221,16 @@
     }
     .feedback {
         padding: 0 30px;
+    }
+    .news {
+        &__arrow {
+            &-prev {
+                left: -2%;
+            }
+            &-next {
+                right: -2%;
+            }
+        }
     }
 }
 @media(max-width: 1000px) {
@@ -362,6 +397,31 @@
             height: 321px;
         } 
     }
+    .news {
+        &__title {
+            width: 270px;
+            max-width: 270px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__item {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+        &__arrow {
+            &-prev {
+                display: none;
+            }
+            &-next {
+                display: none;
+            }
+        }
+        &__link {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
 }
 @media(max-width: 734px) {
     .container {
@@ -459,6 +519,19 @@
             left: 200px;
             font-size: 16px;
             line-height: 18px;
+        }
+    }
+    .news {
+        &__title {
+            width: 120px;
+            max-width: 270px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &__item {
+            &:nth-child(2) {
+                display: none;
+            }
         }
     }
     .feedback {
