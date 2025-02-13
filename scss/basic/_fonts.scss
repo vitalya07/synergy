@@ -32,6 +32,16 @@
 }
 
 @font-face {
+    font-family: 'SF Pro medium';
+    src: url(../fonts/SFPRo/SFProDisplay-Medium.eot);
+    src: url(../fonts/SFPRo/SFProDisplay-Medium.ttf);
+    src: url(../fonts/SFPRo/SFProDisplay-Medium.woff);
+    src: url(../fonts/SFPRo/SFProDisplay-Medium.woff2);
+    font-weight: 500;
+}
+
+
+@font-face {
     font-family: 'SF compact text Black';
     src: url(../fonts/SF-Compact/SF-Compact-Text-Black.ttf);
     font-weight: 900;
