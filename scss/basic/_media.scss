@@ -68,16 +68,6 @@
             position: absolute;
             top: 162px;
             left: 960px;
-            width: 162px;
-            height: 44px;
-            gap: 10px;
-            border-radius: 50px;
-            padding-top: 12px;
-            padding-right: 27px;
-            padding-bottom: 12px;
-            padding-left: 27px;          
-            font-size: 16px;
-            line-height: 19.09px;
         }
     }
 }
@@ -101,6 +91,28 @@
         &__link {
             font-size: 12px;
             line-height: 14px;
+        }
+    }
+    .report {    
+        &__title {
+            top: 21px;
+            left: 61px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__descr {
+            top: 70px;
+            left: 61px;
+            max-width: 691px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__btn {
+            position: absolute;
+            top: 121px;
+            left: 546px;
+            font-size: 16px;
+            line-height: 18px;
         }
     }
 }
@@ -181,6 +193,9 @@
                 color: #fff;
             }
         }
+    }
+    .feedback {
+        padding: 0 30px;
     }
 }
 @media(max-width: 1000px) {
@@ -367,10 +382,108 @@
             height: auto;
         } 
     }
+    .report {    
+        &__bg {
+            min-height: 430px;
+        }
+        &__title {
+            top: 30px;
+            left: 15px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+        &__descr {
+            top: 113px;
+            left: 14px;
+            max-width: 691px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__btn {
+            position: absolute;
+            top: 150px;
+            left: 233px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+    .feedback {
+        padding: 0;
+        &__label {
+            width: 322px;
+        }
+        &__input {
+            width: 322px;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin: 0;
+            gap: 10px;
+        }
+        &__information {
+            order: 2;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__btn {            
+            width: 322px;
+            height: 50px;
+            order: 1;
+        }
+    }
 }
 @media(max-width: 430px) {
     .container {
         max-width: 376px;
+    }
+    .report {    
+        &__bg {
+            min-height: 300px;
+        }
+        &__title {
+            top: 20px;
+            left: 10px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        &__descr {
+            top: 50px;
+            left: 10px;
+            max-width: 691px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__btn {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+    .feedback {
+        &__window {
+            padding: 40px 0 40px 10px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__form {
+            justify-content: center;
+            align-items: center;
+        }
+        &__label {
+            width: 280px;
+            height: 40px;
+        }
+        &__input {
+            width: 280px;
+            height: 40px;
+        }
+        &__btn {            
+            width: 280px;
+            height: 40px;
+            order: 1;
+        }
     }
 }
 @media(max-width: 376px) {
@@ -387,6 +500,31 @@
                 width: 20px;
                 height: 20px;
             }
+        }
+    }
+    .report {    
+        &__bg {
+            min-height: 250px;
+        }
+        &__title {
+            top: 20px;
+            left: 10px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        &__descr {
+            top: 100px;
+            left: 10px;
+            max-width: 691px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__btn {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            font-size: 16px;
+            line-height: 18px;
         }
     }
 }

@@ -4,6 +4,7 @@
     &__bg {
         min-height: 282px;
         width: 100%;
+        margin-bottom: 18px;
     }
     &__title {
         position: absolute;
@@ -49,5 +50,21 @@
         line-height: 19.09px;
         color: $colorText;
         cursor: pointer;
+    }
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        &-item {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: #B0BECF;
+            &.active {
+                background-color: $mediumOrange;
+            }
+        }
+       
     }
 }
