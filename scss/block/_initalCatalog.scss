@@ -1,5 +1,5 @@
 .initalCatalog {
-    // padding-left: 122px;
+    margin-bottom: 200px;
     &__wrapper {
         display: grid;
         grid-template-columns: 379px 424px 500px;
@@ -29,17 +29,47 @@
         &:nth-child(5) {
             grid-column: 3 / 4;
             grid-row: 2 / 3; 
-            align-self: end;
+            align-self: end;        
         }
-        &.img {
+        &-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+        }        
     }
     &__title {
         position: absolute;
-        top: 20px;
-        left: 40px;
+        top: 21px;
+        left: 31px;
+        font-family: 'SF compact text Bold', 'sans-serif';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.19px;
+        color: $colorText;
+        &-white {
+            top: 40px;
+            color: #fff;
+        }
+    }
+    &__allcatalog {
+        grid-column: 1/4;
+        background-color: $colorText;
+        font-family: 'SF compact text Bold', 'sans-serif';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.19px;
+        letter-spacing: 0%;
+        color: #fff;
+        text-align: center;
+        border-radius: 20px;
+        transition: all .4s;
+        &:hover {
+            background-color: #364f5e;
+        }
+    }
+    &.img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
