@@ -95,6 +95,9 @@
             }
         }
     }
+    .footer {
+        padding: 65px 100px 50px 90px;
+    }
 }
 @media(max-width: 1397px) {
     .container {
@@ -232,6 +235,9 @@
             }
         }
     }
+    .footer {
+        padding: 65px 30px 50px 50px;
+    }
 }
 @media(max-width: 1000px) {
     .container {
@@ -330,6 +336,57 @@
             &:hover {
                 background-color: #364f5e;
             }
+        }
+    }
+    .footer {
+        padding: 65px 25px 50px 50px;
+        height: 1000px;
+        position: relative;
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__list {
+            margin-top: 90px;
+            align-self: end;
+            margin-bottom: 55px;
+        }
+        &__social {
+            &-title {
+                position: absolute;
+                left: 450px;
+                top: 400px;
+            }
+            max-width: 315px;
+            position: absolute;
+            top: 426px;
+            left: 449px;
+            &-link {
+                max-width: 90px;
+            }
+        }
+        &__works {  
+            position: absolute;
+            top: 405px;
+            left: 60px; 
+            max-width: 315px;        
+            &-logos {
+                flex-wrap: wrap;
+            }
+            &-link {
+                
+                max-width: 90px;
+            }
+        }
+        &__sinergy {
+            position: absolute;
+            top: 661px;
+            left: 60px;
+        }
+        &__cellar {
+            position: absolute;
+            flex-wrap: wrap;
+            top: 796px;
+            left: 26px;
         }
     }
 }
@@ -491,6 +548,78 @@
             order: 1;
         }
     }
+    .footer {
+        padding: 70px 25px 50px 25px;
+        height: 1120px;
+        position: relative;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+        &__signUp {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 400px;
+        }
+        &__list {
+            margin-top: 90px;
+            align-self: end;
+            margin-bottom: 55px;
+        }
+        &__social {
+            margin: 0;
+            max-width: 315px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 510px;
+            &-title {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 470px;
+            }           
+            &-link {
+                max-width: 90px;
+            }
+        }
+        &__works {  
+            margin: 0;
+            position: absolute;
+            top: 600px;
+            left: 50%; 
+            transform: translateX(-50%);
+            max-width: 315px;        
+            &-logos {
+                flex-wrap: wrap;
+            }
+            &-link {                
+                max-width: 90px;
+            }
+        }
+        &__sinergy {
+            position: absolute;
+            top: 800px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__cellar {
+            position: absolute;
+            flex-wrap: wrap;
+            top: 900px;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 20px;
+            &-list {
+                flex-wrap: wrap;
+            }
+            &-yare {
+                margin: 0 auto;
+            }
+        }
+    }
 }
 @media(max-width: 430px) {
     .container {
@@ -556,6 +685,74 @@
             width: 280px;
             height: 40px;
             order: 1;
+        }
+    }
+    .footer {
+        padding: 70px 25px 50px 25px;
+        height: 1120px;
+        position: relative;
+        border-radius: 0;
+        &__list {
+            margin-top: 0;
+            margin-bottom: 0;
+            &-item {
+                margin-bottom: 15px;
+            }
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: start;
+            gap: 40px;
+            align-items: start;
+        }
+        &__signUp {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 510px;
+        }
+        &__social {
+            top: 575px;
+            &-title {
+                width: 100%;
+                top: 550px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }           
+            &-link {
+                max-width: 90px;
+            }
+        }
+        &__works {  
+            width: 100%;
+            margin: 0;
+            position: absolute;
+            top: 635px;
+            left: 50%; 
+            transform: translateX(-50%);
+            max-width: 315px;        
+            &-logos {
+                flex-wrap: wrap;
+            }
+            &-link {                
+                max-width: 90px;
+            }
+        }
+        &__sinergy {
+            position: absolute;
+            top: 845px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 24px;
+        }
+        &__cellar {
+            width: 100%;
+            top: 950px;
+            gap: 15px;
+            &-item {
+                width: 100%;
+            }
         }
     }
 }
